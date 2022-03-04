@@ -1,0 +1,323 @@
+@import "./reset.css";
+@import "./common.css";
+
+/* 公共样式开始 */
+
+.container {
+    width: 300px;
+    height: 300px;
+    background: transparent;
+    position: relative;
+}
+
+.mode {
+    width: 280px;
+    height: 224px;
+    padding: 30px 10px 10px;
+}
+
+.modeTitle {
+    display: inline-block;
+    width: 50%;
+    padding-bottom: 1px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 2;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: #9b9b9b;
+}
+
+.titleSelected {
+    color: #333333;
+    font-weight: 600;
+    border-bottom: 1px solid #494949;
+}
+
+.tips {
+    color: #41ac52;
+    font-size: 12px;
+}
+
+a {
+    color: #41ac52;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.txt {
+    border: 1px solid #e4e6e5;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 8px 0;
+    width: 280px;
+    box-sizing: border-box;
+    margin-bottom: 11px;
+}
+
+/* 公共样式结束 */
+
+
+/* 短信登录/注册开始 */
+
+.mode .tips span {
+    color: #9b9b9b;
+}
+
+.mode span::right {
+    margin-bottom: 0px;
+}
+
+.mode .remind {
+    padding: 3px 0 15px;
+}
+
+.phoneNumber {
+    position: relative;
+}
+
+.countryCode {
+    position: absolute;
+    left: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    padding-right: 10px;
+    border-right: 1px solid #e4e6e5;
+    box-sizing: border-box;
+    height: 33px;
+    padding: 10px 10px 10px 0;
+    cursor: pointer;
+}
+
+.phoneNumber .txt {
+    padding-left: 60px;
+}
+
+.verificationCode {
+    position: relative;
+}
+
+.verificationCode .txt {
+    padding-left: 11px;
+}
+
+.verificationCode button {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    cursor: pointer;
+    color: #41ac52;
+}
+
+.loginBegin {
+    width: 280px;
+    height: 34px;
+    font-size: 15px;
+    border-radius: 3px;
+    color: #fff;
+    background-color: rgba(66, 189, 86, .5);
+}
+
+.aQuestion {
+    text-decoration: none;
+    text-align: right;
+    display: block;
+    padding: 14px 0;
+}
+
+/* 短信登录/注册结束 */
+
+/* 密码登录开始 */
+
+.passwordLogin :first-child {
+    padding-top: 4px;
+}
+
+.passwordLogin input {
+    padding-left: 10px;
+}
+
+/* 密码登录结束 */
+
+
+/* 国家列表开始 */
+
+.countryList {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+
+.countryList .panel {
+    background: white;
+    width: 282px;
+    height: 222px;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #bbb;
+    bottom: 0;
+}
+
+.countryList .panel .title {
+    width: 282px;
+    height: 42px;
+    background: #ebf5eb;
+    position: relative;
+}
+
+.countryList .panel .title h3 {
+    color: #060;
+    font-weight: bold;
+    padding: 16px 0px 0px 16px;
+}
+
+.countryList .panel .title span {
+    font-size: 12px;
+    margin-top: 13px;
+    margin-right: 16px;
+    color: #b4b4b4;
+}
+
+.countryList .panel ul {
+    height: 180px;
+    overflow: auto;
+}
+
+.countryList .panel ul li {
+    border-bottom: 1px solid #e5e5e5;
+    height: 39px;
+    box-sizing: border-box;
+    padding: 11px 0px;
+    margin: 0 17px;
+    cursor: pointer;
+}
+
+.countryList .panel ul li:first-child {
+    height: 16px;
+    padding-top: 0px;
+}
+
+.countryList .panel ul li span.left {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.countryList .panel ul li span.right {
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+.countryList .panel ul li.selected {
+    color: #42bd56;
+}
+
+.countryList .panel ul li.selected .right {
+    color: inherit;
+}
+
+.countryList .panel ul li.selected .iconfont {
+    margin-left: 9px;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 15px;
+}
+
+/* 国家列表结束 */
+
+/* 第三方登录开始 */
+
+.thirdPart {
+    border-top: 1px solid #dddddd;
+    width: 280px;
+    height: 32px;
+    margin-left: 10px;
+}
+
+.thirdPart span {
+    display: inline-block;
+    color: #9b9b9b;
+    padding: 13px 0;
+}
+
+.thirdPart a {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    margin-left: 12px;
+    vertical-align: middle;
+}
+
+.thirdPart .weixin {
+    background: url(../images/微信图标.svg) no-repeat center/100%;
+}
+
+.thirdPart .weibo {
+    background: url(../images/微博图标.svg) no-repeat center/100%;
+}
+
+/* 第三方登录结束 */
+
+/* 切换图标开始 */
+
+.container .switch .iconfont {
+    position: absolute;
+    top: 10px;
+    right: 52px;
+    font-size: 15px;
+    color: #dddddd;
+}
+
+.container .switch img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.container .switch img:hover {
+    opacity: 0.5;
+}
+
+/* 切换图标结束 */
+
+/* 扫码登录开始 */
+
+.container .QRcodeLogin .title {
+    font-size: 13px;
+    font-weight: 600;
+    padding-top: 35px;
+    margin-left: 10px;
+}
+
+.container .QRcodeLogin img {
+    width: 170px;
+    height: 170px;
+    margin: 20px 60px 5px 60px;
+}
+
+.container .QRcodeLogin .remark {
+    background-color: rgba(0,0,0,.08);
+    border-radius: 6px;
+    width: 143px;
+    height: 19px;
+    font-size: 13px;
+    padding: 3px 20px;
+    margin-left: 55px;
+    line-height: 19px;
+    color: #494949;
+    text-align: center;
+}
+
+/* 扫码登录结束 */
